@@ -1,4 +1,4 @@
-body {
+  body {
     background-color: rgb(214, 226, 228);
     color: rgb(24, 27, 29);
     font-size: 16px;
@@ -7,28 +7,31 @@ body {
   }
 
   h1 {
-    color: blue;
-    font-family: verdana;
-    font-size: 200%;
+    color: rgb(54, 54, 54);
+    font-family: 'Roboto', sans-serif;
+    font-size: 42px;
+    margin-top: 0px;
+    margin-bottom: 3px;
+  }
+
+  h2 {
+    color: rgb(54, 54, 54);
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 0px;  
   }
 
   p {
     color: red;
   }
 
-  #p01 {
-    color: rgb(8, 39, 17);
-    font-size: large;
-  }
-
   a:link {
-    color: rgb(58, 216, 58);
+    color: rgb(21, 21, 202);
     background-color: transparent;
     text-decoration: none;
   }
 
-    a:visited {
-    color: rgb(199, 82, 102);
+  a:visited {
     background-color: transparent;
     text-decoration: none;
   }
@@ -40,9 +43,8 @@ body {
   }
   
   a:active {
-    color: yellow;
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .Aleximg {
@@ -58,23 +60,17 @@ body {
    font-style: italic;
    text-decoration: none;
    text-transform: none;
+   padding-left: 0%;
   }
 
   /* box model */
   .container {
-   width: 80%;
+   width: 86%;
    margin: auto;
    padding-top: 30px;
   }
 
-  .hobby {
-   background: rgb(0, 255, 98);
-   padding-left: 0.8%;
-   border: 2px solid rgb(141, 57, 46);
-   /* margin: 20px; */
-   border-bottom: 5px  double green;     
-   justify-content: center;
-  }
+
 /* .box-model > div {
   float: left;
 background-color: black;
@@ -91,31 +87,60 @@ box-sizing: border-box; */
   border-radius: 15px;
 }
 
-.bg-yellow {
-  background: rgb(255, 255, 228);
+.bg-education {
+  background: rgb(233, 248, 237);
 }
 
-.bg-green {
-  background: rgb(229, 250, 236);
+.bg-work {
+  background: rgb(225, 253, 235);
+  position: relative;
 }
 
-.bg-red {
-  background: rgb(255, 238, 233);
+.bg-courses {
+  display: flex;
+  background: rgb(225, 253, 235);
+}
+
+.bg-information {
+  background: rgb(233, 248, 237);
+}
+
+.bg-information p, h3 {
+  margin-bottom: 2px;
+  margin-top: 2px;
 }
 
 .info {
   margin-bottom: 20px;
   display: flex;
+  justify-content: space-between;
+}
+.left-info {
+  display: flex;
+  margin-left: 10px;
+  width: 70%;
 }
 
-@media (max-width: 700px) {
-  .info {
-    display: block;
-    text-align: center;
-  }
-  .Aleximg {
-    border-left: 10%;
-  }
+.right-info {
+  border: none;
+  border-left: 1px dashed rgb(175, 175, 175);
+  width: 24%; 
+  padding-left: 2%; 
+}
+
+.right-info h3, p {
+  color: inherit;
+}
+
+.d-flex {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.right-info p, a {
+  color: inherit;
+  padding-left: 10px;
 }
 
 .info-text {
@@ -129,31 +154,49 @@ box-sizing: border-box; */
 
 .list {
   padding: 0 20px;
+  margin-left: 25%;
 }
 
 .list li {
-  color: rgb(100, 100, 100);
+  color: inherit;
   margin-bottom: 5px;
 }
 
 .table {
  width: 100%; 
-}
+ }
 
-.table td {
+.table td, th {
   margin-bottom: 10px;
   padding-bottom: 10px;
   padding-top: 10px;
+  text-align: left;
+  border-left: 0.5px dashed rgb(117, 117, 117);
+  padding-left: 30px;
 }
 
-.table td:nth-child(2), .table td:nth-child(3) {
-  color: rgb(100, 100, 100);
+.table th {
+  color: inherit;
+  font-size: 24px;
+}
+
+.table td:nth-child(1) {
+  font-weight: bold;
+  width: 20%;
+}
+
+.table td:nth-child(2) {
+  width: 55%;
 }
 
 /* Четные/нечетные данные */
 /* .table tr:nth-child(even) { 
   background-color: rgb(252, 252, 252);
 } */
+
+.left-course {
+  width: 50%;
+}
 
 .link-list {
   list-style: none;
@@ -209,21 +252,78 @@ box-sizing: border-box; */
   border-radius: 10px;
 }
 .button1:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
-/* .position {
-  border: 4px solid black;
-  margin-top: 40px;
-  padding: 20px;
-}
-
-.box  {
+.social  {
   position: fixed;
   bottom: 50px;
-  right: 50px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: lightcoral;
-} */
+  right: 30px;
+} 
+
+.buttonwork {
+  position: relative;
+  margin: 0;
+}
+
+.button2 {
+  background-color: rgb(40, 71, 56) ;
+  border-radius: 10px;
+  margin: 0;
+  padding: 1px;
+}
+
+.button2 p {
+  text-align: center;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.button2:hover {
+  opacity: 0.8;
+}
+
+.header1 {
+ display: flex;
+ justify-content: space-between;
+}
+
+.workexxp {
+width: 100%;
+text-align: center;
+}
+
+.imagetag img{
+  width: 45px;
+  }
+
+@media (max-width: 860px) {
+  .info {
+    display: block;
+    text-align: center;
+  }
+  .Aleximg {
+    border-left: 10%;
+  }
+  .info-text h2 {
+    font-size: 100%;
+  }
+  .info-text h1 {
+    font-size: 150%;
+  }
+  .left-info {
+    width: 100%;
+    display: block;
+  }
+  .right-info {
+    width: auto;
+    border: none;
+  }
+  .social {
+    display: flex;
+  }
+  .d-flex {
+    align-content: center;
+  }
+}
