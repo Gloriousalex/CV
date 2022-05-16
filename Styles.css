@@ -321,7 +321,13 @@ text-align: center;
     border: none;
   }
   .social {
-    display: flex;
+    /* display: flex; */
+    /* justify-content: center; */
+    right: 2%;
+    /* bottom: 10px; */
+  }
+  .imagetag {
+    width: 45px;
   }
   .d-flex {
     align-content: center;
